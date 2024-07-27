@@ -1,25 +1,17 @@
 {
   "basics": {
     "name": "David Winters",
-    "label": "PhD Student",
+    "label": "PhD Student, Georgia Institute of Technology",
     "image": "",
     "email": "dwinters8@gatech.edu",
     "phone": "",
     "url": "https://dynodave4.github.io/"
   },
-  "work": [
-    {
-      "name": "Georgia Institute of Technology",
-      "position": "Professor of Theoretical Physics",
-      "url": "https://math.gatech.edu/",
-      "startDate": "2023-08-15"
-    }
-  ],
   "education": [
     {
       "institution": "University of Virginia",
       "area": "Mathematics, Physics",
-      "studyType": "Masters, B.S."
+      "studyType": "Masters - Mathematics, B.S. - Physics"
     }
   ],
   "publications": [
