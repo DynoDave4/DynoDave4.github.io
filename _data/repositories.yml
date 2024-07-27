@@ -1,9 +1,10 @@
 github_users:
-  - torvalds
-  - alshedivat
+  #- torvalds
+  #- alshedivat
 
 repo_description_lines_max: 2
 
+#Idk what these are except that I'm using the template al-folio by alshedivat
 github_repos:
   - alshedivat/al-folio
   - jekyll/jekyll
