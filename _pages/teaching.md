@@ -1,12 +1,16 @@
 ---
 layout: page
 permalink: /teaching/
-title: teaching
-description: Materials for courses you taught. Replace this text with your description.
+title: Teaching
+description: 
 nav: true
 nav_order: 6
 ---
 
-For now, this page is assumed to be a static description of your courses. You can convert it to a collection similar to `_projects/` so that you can have a dedicated page for each course.
+So far, I have been a TA for three classes.
 
-Organize your courses by years, topics, or universities, however you like!
+Summer 2023: Calculus 1
+Fall 2023: Differential Equations
+Spring 2024: Linear Algebra
+
+I have also worked with one Directed Reading Student where we worked through "Introduction to Hilbert spaces with Applications" by Debnath.
