@@ -1,6 +1,6 @@
 ---
 layout: post
-title: A Primer for Probability
+title: P1 - A Primer for Probability
 date: 2024-07-27 
 description: Probability Measures
 tags: 
@@ -17,11 +17,15 @@ For our second experiment, let's pretend we are picking a real number in the uni
 Pick any point $$p$$ in the interval (0, 1). If our experiment returns the value of $$p$$, then we did not land in the interval [0, p/2] or [(p+1)/2, 1] which had a probability 1 - (p+1)/2 + p/2 - 0 = 1/2 chance of occuring. In fact, for any natural number n, we did not land in the intervals [0, (n-1)p/n] or [((n-1)p+1)/n, 1] which had probability 1 - ((n-1)p+1)/n + (n-1)p/n - 0 = 1 - 1/n chance of occuring. As we let n get really, big, we see that there is a 100% chance of not landing on this point, and a similar proof works for the endpoints as well. There are uncountable many points in [0, 1], and even though most people haven't seen how to add uncountable many things, adding zero to itself, no matter how many times, should return 0. Even though the collection of points in [0, 1] are disjoint subsets, adding up the uncountably many zeros gives a probability of 0% of landing anywhere in [0, 1] which is a contradiction.
 
 
-So, what is a probability measure? Pretend we are running an experiment with possible output values in some set $$\Omega$$. Then a probability measure is a function $$\mu$$ that takes in certain subsets $$B$$ of $$\Omega$$ and returns the probability of the experiment landing in $$B$$, necessarily a nonnegative number. This function should always return that there is a 100% chance of landing in $$\Omega$$, and a 0% chance of returning outside of $$\Omega$$. If we have countably many disjoint subsets $$B_n \subset \Omega$$, then the probability of observing the experiment in any one of these sets is the sum of the probabilities.
+So, what is a probability measure? Pretend we are running an experiment with possible output values in some set $$\Omega$$. Then a probability measure is a function ($$\mu$$ or $$\mathbb{P}$$) that takes in certain subsets $$B$$ of $$\Omega$$ and returns the probability of the experiment landing in $$B$$, necessarily a nonnegative number. This function should always return that there is a 100% chance of landing in $$\Omega$$ ($$\mathbb{P}(\Omega) = 1$$), and a 0% chance of returning outside of $$\Omega$$. If we have countably many disjoint subsets $$B_n \subset \Omega$$, then the probability of observing the experiment in any one of these sets is the sum of the probabilities.
 
-Here are some more quick facts/ problems to think about:
+Here are some more quick facts to think about:
 1. Often times we construct a probability measure by defining probabilities on certain "nice" sets and then building up more complicated sets using "not" and "or" (or union, intersection, and complement). We could consider experiments occurring in the unit cube, define the probability of landing in a sub-rectangular prism as its volume, and then build up from these sets.
 2. Usually we can not define the probability for every subset of $$\Omega$$. For instance, let's consider a subset $$B$$ of [0, 1] where for every point $$p \in [0, 1]$$ there is exactly one point $$q \in B$$ such that $$p-q$$ is a rational number. Then this subset does not have a defined probability so it is "not measurable".
 3. Even for nonmeasurable sets $$B$$, we might be able to "approximate" a measure for $$B$$ by taking the minimum/ maximum of measurable sets $$\mu (C)$$ for measurable sets $$C$$ where $$B \subset C$$ / $$C \subset B$$.
 4. We can build up "atoms" of positive probability in more interesting experiments. One such case for $$\Omega = [0, 1]$$ would be that there is a 50% chance of observing 0, and probability (b-a)/2 of landing in [a,b] if $$a \neq 0$$.
 5. In the next blog post, we'll consider how for functions $$f : \Omega \rightarrow \Lambda$$, we might be able to compare the probabilities in $$\Omega$$ to the probabilities in $$f(\Omega) \subset \Lambda$$.
+
+Exercises:
+1. For any measurable set $$B \subset \Omega$$ and probability measure $$\mathbb{P}$$, show that $$\mathbb{P}(B^c) = 1 - \mathbb{P}(B)$$ so that the probability of landing outside of $$B$$ is 1- probability of landing in B.
+2. For any measurable sets $$A, B \subset \Omega$$ such that $$A \subset B$$, show that $$\mathbb{P}(A) \leq \mathbb{P}(B)$$.
